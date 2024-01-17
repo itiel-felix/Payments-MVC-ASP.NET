@@ -1,0 +1,12 @@
+﻿@model PaymentViewModel
+
+
+@{
+    ViewData["Title"] = "Create a payment";
+}
+
+<h1>Create a payment</h1>
+
+<form asp-controller="Payment" asp-action="Create">
+    <partial name="_PaymentFields"/>
+</form>

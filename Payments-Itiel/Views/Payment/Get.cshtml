@@ -1,0 +1,12 @@
+﻿@model List<PaymentViewModel>
+
+@if (Model is not null)
+{
+
+    <div class="container">
+        @foreach (var payment in Model)
+        {
+            <partial name="_PaymentItem" model="@payment"/>
+        }
+    </div>
+}
